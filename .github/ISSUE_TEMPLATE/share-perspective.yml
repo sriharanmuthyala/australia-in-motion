@@ -1,0 +1,62 @@
+name: Share a perspective
+description: Contribute a lived perspective to Australia in Motion
+title: "[Perspective] "
+labels: ["contributor-perspective"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to **Voices of Australia**. These submissions are reviewed before publication and are used as lived perspectives alongside — not instead of — the data.
+  - type: dropdown
+    id: chapter
+    attributes:
+      label: Which part of the story does your perspective relate to?
+      options:
+        - A Bigger Australia / population and migration
+        - Resources and China
+        - Shift to services
+        - Digital transformation
+        - COVID and remote work
+        - Inflation and interest rates
+        - Housing / skills / productivity constraints
+        - AI and the future of work
+        - Australia 2035
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: perspective
+    attributes:
+      label: Your perspective
+      description: What changed from where you were sitting? What did your organisation, industry or community experience?
+      placeholder: Share the experience in your own words.
+    validations:
+      required: true
+  - type: input
+    id: role
+    attributes:
+      label: Your role or industry at the time
+      placeholder: e.g. Operations leader, healthcare; small business owner; teacher
+  - type: dropdown
+    id: attribution
+    attributes:
+      label: If selected for the story, how may we attribute it?
+      options:
+        - My full name and role
+        - First name and industry only
+        - Anonymous
+        - Contact me before deciding
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Optional if you selected anonymous.
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Publication consent
+      options:
+        - label: I understand this submission may be edited for length and clarity, without changing its meaning, and may be published in Australia in Motion according to my attribution preference.
+          required: true
